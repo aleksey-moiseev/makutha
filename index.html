@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/main.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Muli:400,700,800,900" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<body>
+
+<!-- Header -->
+
+<header id="home">
+    <div class="header-wrap" >
+        <div class="container">
+            <div class="main-menu">
+                <div class="main__logo">
+                    <a href="#home"><img src="img/main-logo.png" alt="main-logo"></a>
+                </div>
+                <div class="header-menu" id="mySidenav">
+                    <ul>
+                        <li><a class="nav__link" href="#home">Home</a></li>
+                        <li><a class="nav__link" href="#about">About</a></li>
+                        <li><a class="nav__link" href="#partner">Partner</a></li>
+                        <li><a class="nav__link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu__btn menu" 
+                onclick="myFunction(this)">
+                    <p class="menu__title">Menu<p>
+                    
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+
+            <div class="main__title">
+                <h1>think different</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- About -->
+
+<div class="about" id="about">
+    <div class="container">
+            <div class="about-main-tabs">
+                    <div class="about__title">
+                            <h2>Who we are</h2>
+                        </div>
+                <div class="about-tab tab-item-wrap">
+                    <div class="about-tab__title">
+                        <div class="tab">
+                            <div class="tablinks tab_active" onclick="openTab(event, 'About Us')" id="defaultOpen">About Us</div>
+                            <div class="tablinks" onclick="openTab(event, 'Our Vision')">Our Vision</div>
+                            <div class="tablinks" onclick="openTab(event, 'Our Mission')">Our Mission</div>
+                          </div>
+                    </div>
+                    <div id="About Us" class="tabcontent">
+                            <p id="first-about-tab">Lorem ipsum dolor sit amet, 
+                                consectetur 
+                                adipiscing elit. Morbi nec mi volutpat, 
+                                mollis dui et, maximus est. Mauris 
+                                imperdiet justo non urna auctor 
+                                convallis. In a ligula sit amet 
+                                lectus consequat consectetur rhoncus vel 
+                                elit. Pellentesque id interdum metus, 
+                                id rutrum quam. Cras non gravida mauris, 
+                                id pharetra ligula. Donec rutrum, mi non 
+                                vulputate suscipit, tellus nisi sagittis 
+                                leo, a tincidunt tellus lacus id justo. 
+                                Maecenas aliquam tincidunt posuere.  <br>
+            
+                                Duis ac enim ut arcu fringilla aliquet. Donec 
+                                sollicitudin 
+                                dictum dolor, non egestas felis accumsan eget. 
+                                Phasellus 
+                                viverra orci eget eros dictum laoreet. Donec 
+                                vehicula porttitor 
+                                tincidunt.</p>
+                    </div>
+                    
+                    <div id="Our Vision" class="tabcontent">
+                        <p id="first-about-tab">
+                                  In a ligula sit amet 
+                                  lectus consequat consectetur rhoncus vel 
+                                  elit. Pellentesque id interdum metus, 
+                                  id rutrum quam. Cras non gravida mauris, 
+                                  id pharetra ligula. Donec rutrum, mi non 
+                                  vulputate suscipit, tellus nisi sagittis 
+                                  leo, a tincidunt tellus lacus id justo. 
+                                  Maecenas aliquam tincidunt posuere.  <br>
+                                  viverra orci eget eros dictum laoreet. Donec 
+                                  vehicula porttitor 
+                                  tincidunt.</p>
+                      </div> 
+                      
+                      <div id="Our Mission" class="tabcontent">
+                        <p id="first-about-tab">
+                                  Adipiscing elit. Morbi nec mi volutpat, 
+                                  mollis dui et, maximus est. Mauris 
+                                  imperdiet justo non urna auctor 
+                                  convallis. In a ligula sit amet 
+                                  lectus consequat consectetur rhoncus vel 
+                                  elit. Pellentesque id interdum metus.
+                                  Duis ac enim ut arcu fringilla aliquet. Donec 
+                                  sollicitudin 
+                                  dictum dolor, non egestas felis accumsan eget. 
+                                  Phasellus 
+                                  viverra orci eget eros dictum laoreet. Donec 
+                                  vehicula porttitor 
+                                  tincidunt.</p>
+                      </div>
+                </div>
+            </div>
+       
+            <div class="about-gallery">
+                <div class="about-gallery-grid">
+
+                    <div class="about-gallery-row">
+                        <div class="about-gallery-cell">
+                            <img src="img/gallery-1.jpg" alt="">
+                            <div class="gallery__description">
+                                <p>Lorem ipsum</p>
+                            </div>
+                        </div>
+                        <div class="about-gallery-cell">
+                            <img src="img/gallery-2.jpg" alt="">
+                            <div class="gallery__description">
+                                <p>Lorem ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-gallery-row">
+                        <div class="about-gallery-cell">
+                            <img src="img/gallery-3.jpg" alt="">
+                            <div class="gallery__description">
+                                <p>Lorem ipsum</p>
+                            </div>
+                        </div>
+                        <div class="about-gallery-cell">
+                            <img src="img/gallery-4.jpg" alt="">
+                            <div class="gallery__description">
+                                <p>Lorem ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div> 
+</div> <!-- about -->
+
+<!-- What We Do -->
+
+ <div class="what-we-do">
+    <div class="container">
+        <div class="what-we-do-cards">
+            <h2>What we do</h2>
+            <div class="cards-wrapper">
+
+                <div class="card">
+                    <div class="card__logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="65" viewBox="0 0 65 65"><g><g transform="translate(-261 -1804)"><image width="65" height="65" transform="translate(261 1804)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAABBCAYAAACO98lFAAAJC0lEQVR4Xu1bfYwbxRV/s76z13e2c0dLSCJCC+EjqYjUUEL7R1FJKf2gSVshBUIgiBAaKkUU4nM+Sit0FbSBxHYgSLQol/BVGiXlD1Tx2Yo2QIUCtIBEiYJUvpI/QE3Tu7N95/XXvv5mvbvZcy5e27v5g63nNPLt7Mybeb95782bN7OCAp54H4UKRyJricVVJOgiIv4I/z/N1PtAIpX/j2RfBBmDsa2ReaGQeAE8zjuRTx5jFssSKe1vgQWBhylciKtHwPxMCwAm+ggMz8Fz2CoTtdDswIKQy0Q3CeJ7JLOSeV0oyweSk3+fuLdvDvfwQ0y81ARiJMAgqK+DucWS0ZpQFksAnCqRz6if4HkW8qeBBQFMvg8Gz0GuxIc0W/wtIHJZ9VnB9D08lwMLQiGrHmCmr0qmdVYumZGafKNBEj7F8xnInwQWhHw2ejUx7zVtwsfMynIJROG+/jOoqu9iwd83l8ddgQUB4r4G4j4ydWnkt5jE+WC63yqv6XROIEHIZdSbwNguVx+IxfJ4qvhk4ECABKyGBOx2AHCXIJHDkngDFsu5+H8Ua+Z+Zj0b31D+Z+A8xkYAMMP3xoa0zbazNEx9YpgmGyUkMJLgBkAz1QgECF4AOCXqABdVFDPRM6ulnsnEHfljrsbJYwWne1xniLfGhkqb2iHrmySMZxOnKXrlLhK8DAM4E1lDPiBY7IylinvaGVSrdeEV/hx177bqdwKAb5Iwup0GenT1IAjOno4BZt6WSJU2tspcK/XymcgtmPff2gAwPRxLaTe10vaUGEasy/ZmxfTQ5GbldIjZF2zLTPzDxFDpj50MsrFNIaPeALV71FG+B/uDlZ3S9qwOhXTkChbiT6ZYfYj1d2k8VT4obQNmayvW5ZQ5uMMYqA1KpwM+EQC+Lz5UWt8pPV/UIZ9W98IaXW0Mgukb8ZT2snNAAOJN4LHIeB3i+YnbS+91OuBGAOAApSFdGzqld9yWeKSQT0feIiG+LMnE8lp/ozOSz0R3gP1bjW50WhLfoO3vpMtCWl3Fgh6z1Ys5AztjSVknJO02ntUBkvAbSMJPTLFaBQ/td1MlQf0Yz2fJshCJs/qGijLk1VY6lQD4og7HdlAiXFGlP9CDjGVR3FhVii+EauFZJJTtQPm7Jsd/gE2oq00bCZJ2KyQN0lRPUIEsVGCoDRL1dog600FkyCOkteps71kSCtnoSiyBj4Bo7/GB0oRzu2qWvwp1uWI63/1kDOXS6mYhaItXAGR7+BT78HMZck6raotO30R5i64nEKbfszeZI+a346mSYSTdEgC4GQDstAEQ9HgiqWEn2Fly2q6qog0OrqcxzyBAT6+DobL139i/M72iC1qBrezZeFdA2bM46HgbXuTv0WHE6FTQ/nhSW9KMlUbaoLsPq841nbFfbwXb9SL6/iaW7olKrzbncz+lnCcQThgkUVN9L2TDCxHekjG+OhBEL5V7tR/0lKILhOAlmPE+APd+uao91RMOXyZYecrB8E7YkrVeAPAdhEYAEMx8FKc4N7oN0gTiddRTzbqj+B2c2o4homLgeJl3R8ii5ZskwFm5HuL0uEUYwcrtiWQp6QaAPZBt4QuxYjwJsbzApU0N738NCbizVdpu9XwBwSsA1iBBZwRArjGf38Hyd7dgPgZAl8F+3GaWl2MxLSZuoYobc62+9wyCXwCMbaHBUNg4+ZG24TCWzLOxZOq2pGTVX8EI3iGfoWY/g5oZx2h+pJZA4B0UyVeit2NP/h10ahxPYcZkHKACK/9wpyrgZADL3tdhBF8xygTEPanJeICdjJgEl+uBGB9WBCdtVxDy22IzWam+Bma/6IL6CPT0x53OzHi6b7EidGkcwaR4EOHudU5ak5no3BrxYbPsCfR1fad9NbZzByGtHmowVjIqZFlxc+JoN/YFli53NDYcl/fhuHwcjaWLnasJWjSQ1D6wiMGrk/7EtfVnvg1bZNtd7qhDR6OmIEBE10JEH6pLIM7vdVrNld53RG9lISv0iB0YEbwuniw96HUwuUxkmxVjkI4L+r4fIbhR7AnkHuNyk74O13bA6dp67bc5CBlVqsEl6KRaq/H8gY0leZprpPGtkfOUkJBhMzlzH0A8p7nxMXV4uXR0Ixygy8FgVamF1sQ2TsiDzynJGWOYjjld56UzNpSe8cq4s31TECCCRVSWov8vMHleY8cInb0BkC5GeQnWfADWXKrKSRPoyaDKpYZksb4gkSofaqwMtVCgFlKqViPbx+YA7h8K0Sao3Yt+AiBpuYEgIz3nIxfA5KBzm4nB9mCw/8Y76dkdxftZziVtuoGisz2wLyvkO+j8PKfON9af2N43u1qtXaQoiqoo4sP+9ZOIQp2a1ByEtIowOf3CmDmi56sVbcVpm2n8v/fQjN5eY/v5bXNYeyEpBnNNJaENENxo+fm+KQhmuFzOthUPkAeWcrWYb0qAMRbYi3Od9uJkA2xHEvxk0o2W6xKJuMCl2MVNCZA6icJ6r2z1AOUzC4JkeCzbd3GIa9KDw15fzIByyPX8rwhGPYDg6F/ckLbef6ZBsJiQMcNQVf18paId7WSdDgQIrc64XzYhlw7/SAjlStDTcdVupPGqndfxOCTU38iSn6sD7NFjsEerDJo+eaXTjc/VMPqFtqTTrjrk0jiqE8I4RcLvdbFkUe4ffE9dEOqT07o6wO0dhps8F47TEThHw+1OSSAkASCAfyMxQIAr314KCgj1vQTTe4j1S6+xrdQFISiGEerQlYQuCFKcu5LQBcFYBbqS0AWh7g50JaELQlcSbNcYbq91JHcIe4cFbfnMdUl6Aj/GFdtWruzhq7UtOIGuf5ghxDXxZFFGuH1P4OvPCB5/C4QLMaHNFEmS5y31bht7AxPvouxLyO8ChAvbHQ1usuzGfSV5qEJFVYvPXEeFZjTyWfVO7FN+KesozFf2p0rPtdtnK/Ud30HmwVfC2UYYGx4FR/E6/nBIiJdfQ44iy89kXpMXB83yVvqSdw0WIlvfJx/A/xOSv5M0lvXlwc9c87088pP3F9revboMDv3wV8yrQPIWzKvIZfAVwjHZKC5h21vnVpgMZB0JgvwizLh2+3+ajv4PVrprmXlGFrsAAAAASUVORK5CYII="/></g></g></svg>
+                    </div>
+                    <div class="card__title">
+                            <h3>Marketing</h3>
+                    </div>
+                    <div class="card__description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="63" viewBox="0 0 65 63"><g><g transform="translate(-651 -1805)"><image width="65" height="63" transform="translate(651 1805)" xlink:href="data:image/png;base64,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"/></g></g></svg>                    </div>
+                    <div class="card__title">
+                            <h3>Consulting</h3>
+                    </div>
+                    <div class="card__description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="65" viewBox="0 0 65 65"><g><g transform="translate(-1040 -1804)"><image width="65" height="65" transform="translate(1040 1804)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAABBCAYAAACO98lFAAAQDElEQVR4Xt1bCZQUxRmu6tnd6WFnZlHAGwyCUUFA2eWJIooSTQLGM8Hb5xlNNAq7C3gSjCfszkC8QOPDeF9JvDWaqMEDjyBeSYwHimI8EIHdmd2Z2Z3pyvf3dPXW9PR0z8yCeS/93uzOdFf9VfXVX//dnP0fXF3twR8bnF/HGVsebkmfWemS0M//SrTV7ck07SjGeJNgYgf0MDgTa7lgL+c09lhDc+YjfypbpkVnu34m5+x3krrg7M5oc/qUSkbzBGHTwuCIgMavZJwd50UUYNyWyqUvGDKXJSoZvL9tE+3BcxjnS5x0KgWiJAjJ9uAhgvPHMUCdY5Ae/NbwqSm4z9nnQoip0ZbMB/1dXDn9iwAQ4i0Aslc1HOEKgnXGnlQmk8MC4yygPcKzgQ+1GiMgDGOUYCaH2GcQv7uYMJqirT3/Lmch1bZxAoCdfwpHYFpnvO4oLrQ/VQpEEQguALxn5MQRDXMyH7pNOhmrHWewwMMg9D16vqWBcAIAeXBtuDl9kZxbZ1w/A8fzVnuugt0XaU0f73mc1YeJNv1gMPqzCoG/hiPpafxs1utFZMO1rKG2Vl+JNiO3JBBuMkBwsSjanGlW5+cCxHMAYmqpNdic0LVowPaGYXxhN+Tsb5Hm9EHlsiwBUVOrvw2CO0sgwEHjBs7JrC6Xhlc7aIGfY9dvLtFmeaQlPaVaIGwQkrHQY1B/h1mEPgbREZVOvmvBgB2Mmtw/oUoHWn3XBbK8ccDc1OeV0ipYUCx4OGf8EYVDlzIu/oFxbuhrJx6KtGSOLujXrl8M4K5S7j2Idc1wzsUEoSMeHKkJLs98TtO0ofWzur+sZuJiPqtLRvRP0JfsCVyiA0J1YrXCMtmunwzBd4c1FwNC5w9g7WPpd2dMvwgLuFqZ571Y5AmFAJpt5uGebs7GxY4wQUi061fAFrjUbCREW7Q1M6caAMyJLQrtyw3xKL4OljRMYRkQjdGZmfcroVssA0QHdltymUmqMx6azYVY6A1EMAZOsuWGE4g8CDH9Gfw7hL5zbowNN/e8W8lkZVuninLQSIqAaCoXiFKGEGg+jd3+kUo7GdNPAdC3uwGRiIfA/iIGDtpJ7aMCkQchHnobLDAWX3vT2fSgaiw/JwBkReY0vlQT4mHQ3d6aQBJyp9HPoHIBYDn6j8Fna4vOywBify8gYNYvFEyDxhIPKO0gr9hom0Oto2Edh+CblrWV7e1ND976QtZRCScUAcD44+GW1E9Mdr06MogHe1/DVyloEwCiqRQQxZZgXs8n43VjhNDeUeblC4RjDS8AuAMtO+guBdBbTRCS7aHHoW+n03d4Y/s0NKdeLxeEZDx0AuTI3bI9zp4NgLxn2RFvqEBAfTY6DbAiS5CJOMBqkXRgx0yBHfO8MreXsLDJPkeDHpsA2HRiQXAnP6JvzrRbinARgt0ebU2fWg4IiXjwPIjb670AkM82LmIDaw19Fc7ucOtewuBivPRAXWWAi7XnBAIq8DWRqzk8Mju5To7lkBEFajER1+dBPpC2CFjt55mc0L0gtFOuRqyVRHKcjRjYnP7YCwjIkeMgR+6VbbC416Mt6X08+1wXHsJ6s2Q8Rax2G8KJ9PaJhtAEaJSX3PqC7hug21Sw2211Y4WmEbcG8/f5o5GWlL2zdCcRCx2DxQ3HsWxXOOB8tP2tQmsJOOSXtrEEDUEsLXXsWsiGMaVkQ7EWEKvCicw+fD7L+nFQZyz4fRwZMrHzQMD7xM5sg2/SW0VsgMN0F/fZHIbdhn8w0d7pvIf7mAQBi1iGYMoZXmPDpjgL7W5RNu33APe0/BSsC0aODiOHuEHq948ARJMTCBc1uCI8NH0An8FyfgDI5xYQJCPCSh9oLXabXIyp2oS43wlERyw4TWP8CbufYA/AvznJy7/xAqAABPpBQRQtwMn+r7cGWV0j2NRQa/pT+u2lBczni4O78Ry/DOppZbgls9h7Z0yOUIHIYqyRcizq6wQCt8hF312hezfY+SSvcSADLgWnXeHGATbATgKd7XW7M66t7ANCdBg8uAszsiM0bthaw00LwPJcAd7al2iWI1fyoLFXFV/jayGMKaqJ3dEWnK5pZnDHefkDENPno9OvvQAo4gTZuBgItgHPGvAxJaobAHQf0ahZOKtx2jHs0B5eOySfkVAGC7zoFY+AB7k/tMCLCr17QP9ETw4oE4CSINADFyDotoHPMkzgrFIT2NSmD2/oSn/aFakdA4vtcqjQd2HsXOY14Y54dGsuet7wAqIjFpqowQrM00udu7kA8ATBBCJ/xinIsqM1aC/PBYaF53R95bfL0Dbkf+xpDgITOtyaPr0MIFap8YiqnC4HBzgjT25zKAqvORslF9ZvZwRyHynC8jNojbF+pjVAuBK0LpH03CJA/mOJTTxQs3t4ZtfXfqDT80Qs6GoH+PX1BUEeDc61v+O7VGmrAUSjHxCIBSyD3jN1sXVdgaNE1lrJK7Gobg9mkOPDBliNvoGwPMAvHuGnBr3GLAsE5WjQ5Gwgslq6aatZbJPXALAJCnx5tK0YCL94RH8AMI+rH6uozy0ZoQLxsZbVJtfP7e6LTboQxNH4DW6rwnGzAVGOHeC3xopAMDnCafYythGu8UTfGEE1QLTXjYLNAjvC9jUKAjMAdz6e+doBmx2EEkB4xgjkJKrhiFS7vnM2byMMtegkczmxFwyoqWr0GUfG9gX8Fu18XjEnSAIuHFEVEOCigpiB2wI62yODOe9dpQCBNSt+Tz8AqFgmOCfYsTC4K3yNF3B/O7lL5cQRnRxRjh2RIDc8m13liBWmYaHOizan2irdfbV91ZxQIDBj+hpp5OB+kgcCI/10e2c8GOeCz7LpCH6TryWYj0dQnMPSUMXR52rA6DcI2NWDMDD5/hQTMC/w6qeC1yFq1Ek+R8mrKjsiXjeaCdOOMPMIGOz9QA07dMDM9GfVANDv4+ARFicg1gCIRj8gEAFCFkmovoC/+swXjZDxJoH4FnUCjaobXgkgVXNCcVCUskT8ZsQSnpbsShxRw/jkAS0pO3TnNrlqtIZVPUMckQ+xCfYtOGJ8NRxRFQguHHAzzOFzaC5u8QimiX0js3re89qdaoCwwvDEEf0ComIQ3I4AEoTTG1oydlGHixvezTSjaUsAQWPBryFP18p9svWBAGushCMqAsFLBuAozEDE90G525sLiHLsiOTi+m1FLkd2RB8QjI/3O4ZyrmWD4JYYyatFfkwfmxcDgV0iO2KI1aYb5TwTIq09/6rkaJRjR/QHiLJAcGaZIIQeUNLjFI9stFHl4ofh5gwleM0rP7ksAqR2zUIKTtdIP6erGjuCYh8ikCM7ImQNvx651V38cqu+IICtj8RuPmTvnKOCBaF6rSuqr0Dmyk68CI3vH52Vetk+GohQIfJK4TMZxV4rRO34aGtivRdHVGNHJJGYMTRthT0WZx8GGD9oQHPqP6XG8gQBkZqzsYNLHZ1Xa0I7tr61m8Ll9pWM669WCgSrrWmMnJ/8xvtoVG5HUMxSE+aR29ai/Q0qZsaXqpgpCYKLEKT6xb6aRs6moKZpeaVAIGapxiPW4mhM9DsalajPZDx4qBD8SBzZGXCxBinzKwmEKwguFSJ/DGS1mbmAuB2ED1aORgEQMI54V1x/ReWIIvVZnGvYyAzjgMjsHtQglb7KAQIJ4sWIRl/gQWYdAsXjnIHiIhCKAeA3QvWdJwljMpQ4nSR/C24cGW3u6SuqwgO0IV/CrCuiC4P8AOk1uzRw3Y0sHErrFI2Sidk0gJjQHyAQYboKu3+xuvP4/j7uDcEEdlPuvwvDjgpSlL1UfrjbAeIc1AkVlM45geCcnxhuTt0jSTm1iWD8wmhLakEfkKasoTRd3vbPX1UBAa47u4bzp3JMqA7UPGS7Y0gQdxNhpOqngkspg26qaqfgtjnBxxm6GBnca1T0nEBIYwkFH8cjvG4Dgj5PY0JHywk5Q2J4nsJHqrQMaqYm+NVMuRwNWqwVnebXg3MRei+8Cusg+Q1o8yvZwgQBFaCnwSBZptxcgIXo6vnCbrdit2OFQAShIfh45R6V3CvZqcLaQkye8hCUjzAvpPNms5x2F/IaryrxiAzCZ6P9ikCtTaNaA7UAPYcI+GC3CHhBsSqKwSOtmb3teThrmcE2T2LXzdIdTJqk/wF2Y8FOQSbpTvn7qzZWX8+DL6nV5QogBVWmXmHx7nhox5wh3lak+ToEZsZ6BWbyhaPGmxjPjmPQlHHeo04ukL8BnKzN6knp6UHbnMuS5mZgoRSvsy7xJs6/urNIjwcfBEf8tBQQFlgFwhL3ygZA0jUDqqhKUYD4AkCMdwNCrbt0LBiuBvIarWk7Ai2fW7YDZdXzBWSCHYh2ZNIzDqFxK1CQVR7rsavnRppTatkbcYRaxULFjsejjV1JYgHxHP5TlOkv2I1DbfQdqTGvqHD3Yn1YLstWqUDA2puoOkIl1CC9bCI1DQ1dEJhxjU9ygXVmbjJBoD+QCXdAJpxs8wNAwZGwZYTbbmOhReq1K1a7d31LL7GoeVWTFzCByIEj+ipmOrlhTA7P7nnHWbRF+U2RZUt6ROYrPaC3YjVqis8EwjxqQlAJoUwqW7PrU/32QryAsCpGqJg67w1ydgusRai50lc1AEhqLkBkUPQxShMMVTDsVKvd5VjkfHUGLlpjCThvmiJ0qaSoCx+SG8+jv2n4FeymEwhUo04DEQNh7T8rg222ChEvELtjoaHQ/RQjkDVUUKUCpjunYpGvsQAZ5i8g4wKEfL4W6nc6CkJJfVPJwBegYXJHEUs7gXBMtGIAIFR9Q+mlwLCAoDScDJbIpkX1zYUcEUJtpbCtXDzbACE7ioSsoiEQq9V2oGp+d98hppNg/JlKGFWrMVS/t/ocAYcdIBaigGuuVx+/ZyTVA6JnpVIEaobZIdnVAi6bTB44A+V9fJx188usxvbbalZ6Df2GZrkfW2++8wDLcT+4/K94eJH6s4XOEj/WqTXUBfQ3Pe4FhhUsobpmGaGyF1DAAfnkDLWTR2UDtMteqnaBNrwWgOY3xtJy3vGE9kIgUHBxOt46u8054S0JgBzLqrolGSGB2Ii9vMzIsWeoRtosJNd731LSdKtxBCY57Qw1RgK/4xKUMF/tG1kC+9yrvhzqBMJZItOf7LDf0bCAIPWpWonUjeqj6F4+iIIchKgRk9zerbDyFfn3OQRbimP1C18QqG2xsOTHwQG5H5KYCi+oAMOiWX163A8A+dwylymqvV+pPlTZAl9nNeRYBvbPJ5yLNZQRg6/yAcxzHWl9cv0DyIU+EW5NHVYWCCWAwCs+4vDvEgB10fT6IjLgh0H7TMIiRuGZWiLshymVItJbvu9BTY4qGwR3IL47DvBa1aZr2FaBWn0MagXxdoy2G2qiR+MI74o+ZAfQYkteCPZoFYHgCkQ/7AC/7ervczKZUeUyDEdiKITgcPwfhuqWYfCykC9BhS7etofle2XFINDEIAuoZJ7eoaT3Bezi6f5O+n/V/79g0GFpEf/toQAAAABJRU5ErkJggg=="/></g></g></svg>                    </div>
+                    <div class="card__title">
+                            <h3>Development</h3>
+                    </div>
+                    <div class="card__description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div> 
+
+<!-- Our Product -->
+
+<div class="our-product">
+   <div class="container">
+       <h2>Our Product</h2>
+       <div class="row">
+           <div class="picture">
+                
+           </div>
+           <div class="description">
+               <div class="title">
+                    Travel
+               </div>
+
+               <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec mi volutpat, mollis dui et, maximus est. Mauris imperdiet justo non urna auctor convallis. In a ligula sit amet lectus consequat consectetur rhoncus vel elit.
+               </p>
+               <div class="learn-more">
+                    Learn more
+                </div>
+           </div>
+           
+       </div>
+
+        <div class="row row-2">
+           
+           <div class="description description-2">
+               <div class="title">
+                    Hotel
+               </div>
+
+               <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec mi volutpat, mollis dui et, maximus est. Mauris imperdiet justo non urna auctor convallis. In a ligula sit amet lectus consequat consectetur rhoncus vel elit.               </p>
+               <div class="learn-more">
+                    Learn more
+                </div>
+           </div>
+           <div class="picture">
+                
+            </div>
+       </div>
+   </div>
+</div> 
+
+
+<!-- Our Partner -->
+
+<div class="our-partner" id="partner">
+    <div class="container">
+        <h2>Our Partner</h2>
+        <div class="description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut <br> enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="our-partlner-logos">
+            <img src="img/kiwano.png" alt="">
+            <img src="img/highpoint.png" alt="">
+            <img src="img/stantec.png" alt="">
+        </div>
+    </div>
+</div>
+
+
+<!-- Contact -->
+
+<div class="contact" id="contact">
+    <div class="container">
+        <div class="contact-info">
+            <h2>Get in touch</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec mi volutpat, mollis dui et, maximus est. Mauris imperdiet justo non urna auctor convallis. In a ligula sit amet lectus consequat consectetur rhoncus vel elit.</p>
+            <div class="contact-inputs">
+                <input class="name" type="text" id="name" name="name" placeholder="Name"><br>
+                <input class="e-mail" type="text" id="email" name="email" placeholder="Email Address">
+                <div class="arrow">
+                    <img src="img/arrow.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+
+<footer>
+    <div class="container">
+        <div class="footer-icons">
+            <a class="fab fa-facebook-f"></a>
+            <a class="fab fa-twitter"></a>
+            <a class="fab fa-linkedin-in"></a>
+        </div>
+
+            <div class="footer__logo">
+                <img src="img/footer-logo.png" alt="">
+            </div>
+        <div class="footer__link">
+            <a href="https://www.behance.net/gallery/58164003/Makutha-Free-Business-Website-Template" target="_blank">© 2017 Asasta Creative. All rights reserved.</a>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/main-page.js"></script>
+<script src="js/parallax.js"></script>
+</body>
+</html>
